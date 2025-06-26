@@ -18,7 +18,6 @@
 using namespace Common;
 
 namespace Exchange {
-#pragma pack(push, 1)
   enum class ClientRequestType : uint8_t {
     INVALID = 0,
     NEW = 1,
@@ -58,6 +57,21 @@ namespace Exchange {
          << " side:" << sideToString(side_)
          << " qty:" << qtyToString(qty_)
          << " price:" << priceToString(price_)
+         << "]";
+      return ss.str();
+    }
+  };
+
+  struct OMClientRequest {
+    size_t seq_num_ = 0;
+    MEClientRequest me_client_request_;
+
+    auto toString() const {
+      std::stringstream ss;
+      ss << "OMClientRequest"
+         << " ["
+         << "seq:" << seq_num_
+         << " " << me_client_request_.toString()
          << "]";
       return ss.str();
     }
