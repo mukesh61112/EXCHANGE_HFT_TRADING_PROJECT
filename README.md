@@ -36,6 +36,7 @@ This project simulates a realistic environment to experiment with:
 -  Core pinning and thread affinity to reduce latency  
 -  Lock minimization and concurrency optimization  
 
+![Alt text](Exchange/Image/Exchange.jpg)
 
 
 
