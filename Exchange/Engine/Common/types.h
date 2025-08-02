@@ -5,7 +5,7 @@
 #include <sstream>
 #include <array>
 
-#include "macros.h"
+#include "common/macros.h"
 
 namespace Common {
   /// Constants used across the ecosystem to represent upper bounds on various containers.

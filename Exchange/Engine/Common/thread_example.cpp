@@ -1,5 +1,4 @@
-#include<iostream>
-#include "../header/thread_utils.h"
+#include "thread_utils.h"
 
 auto dummyFunction(int a, int b, bool sleep) {
   std::cout << "dummyFunction(" << a << "," << b << ")" << std::endl;

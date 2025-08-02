@@ -1,18 +1,11 @@
-/*
- * thread_utils.h
- *
- *  Created on: May 6, 2025
- *      Author: mukesh
- */
-
-#ifndef THREAD_UTILS_H_
-#define THREAD_UTILS_H_
 #pragma once
-#include<iostream>
-#include<atomic>
-#include<thread>
-#include<unistd.h>
-#include<sys/syscall.h>
+
+#include <iostream>
+#include <atomic>
+#include <thread>
+#include <unistd.h>
+
+#include <sys/syscall.h>
 
 namespace Common {
   /// Set affinity for current thread to be pinned to the provided core_id.
@@ -45,6 +38,3 @@ namespace Common {
     return t;
   }
 }
-
-
-#endif /* THREAD_UTILS_H_ */
