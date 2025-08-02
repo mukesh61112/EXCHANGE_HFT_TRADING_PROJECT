@@ -1,4 +1,4 @@
-#include "snapshot_synthesizer.h"
+#include "../headers/snapshot_synthesizer.h"
 
 namespace Exchange {
   SnapshotSynthesizer::SnapshotSynthesizer(MDPMarketUpdateLFQueue *market_updates, const std::string &iface,

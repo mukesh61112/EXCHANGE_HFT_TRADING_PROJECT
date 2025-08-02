@@ -4,10 +4,10 @@
 #define FIFO_SEQUENCER_H_
 #pragma once
 
-#include "common/thread_utils.h"
-#include "common/macros.h"
+#include "../../Common/thread_utils.h"
+#include "../../Common/macros.h"
 
-#include "order_server/client_request.h"
+#include "client_request.h"
 
 namespace Exchange {
   /// Maximum number of unprocessed client request messages across all TCP connections in the order server / FIFO sequencer.

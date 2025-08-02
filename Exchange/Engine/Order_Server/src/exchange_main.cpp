@@ -1,8 +1,8 @@
 #include <csignal>
 
-#include "matcher/matching_engine.h"
-#include "market_data/market_data_publisher.h"
-#include "order_server/order_server.h"
+#include "../../matcher/header/matching_engine.h"
+#include "../../MarketData/headers/market_data_publisher.h"
+#include "../../Order_Server/header/order_server.h"
 
 /// Main components, made global to be accessible from the signal handler.
 Common::Logger *logger = nullptr;

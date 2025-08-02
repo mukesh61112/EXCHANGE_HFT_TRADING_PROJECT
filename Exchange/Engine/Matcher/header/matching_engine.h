@@ -10,13 +10,13 @@
 
 #pragma once
 
-#include "common/thread_utils.h"
-#include "common/lf_queue.h"
-#include "common/macros.h"
+#include "../../Common/thread_utils.h"
+#include "../../Common/lf_queue.h"
+#include "../../Common/macros.h"
 
-#include "order_server/client_request.h"
-#include "order_server/client_response.h"
-#include "market_data/market_update.h"
+#include "../../Order_Server/header/client_request.h"
+#include "../../Order_Server/header/client_response.h"
+#include "../../MarketData/headers/market_update.h"
 
 #include "me_order_book.h"
 

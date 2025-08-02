@@ -2,7 +2,7 @@
 
 #include <functional>
 
-#include "market_data/snapshot_synthesizer.h"
+#include "snapshot_synthesizer.h"
 
 namespace Exchange {
   class MarketDataPublisher {
