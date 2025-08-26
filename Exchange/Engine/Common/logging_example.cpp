@@ -1,22 +1,17 @@
-#include "logging.h"
+#include "Log.h"  // This includes macro.h indirectly
 
-int main(int, char **) {
-  using namespace Common;
+int main() {
+	using namespace Common;
+	Logger* logger = Logger::getInstance(); // or std::shared_ptr<Logger>
+   LOG_INFO1(logger, "Exchange started.");
 
-  char c = 'd';
-  int i = 3;
-  unsigned long ul = 65;
-  float f = 3.4;
-  double d = 34.56;
-  const char* s = "test C-string";
-  std::string ss = "test string";
+   // LOG_INFO1(logger,"Exchange started.");
+   // LOG_INFO2("Market data feed active.");
+    //LOG_DEBUG("Order book state updated.");
+    //LOG_WARN("Price spike detected.");
+    //LOG_ERROR("Failed to match order.");
+    //LOG_FATAL("Critical failure in matching engine.");
 
-  Logger logger("logging_example.log");
-
-  logger.log("Logging a char:% an int:% and an unsigned:%\n", c, i, ul);
-  logger.log("Logging a float:% and a double:%\n", f, d);
-  logger.log("Logging a C-string:'%'\n", s);
-  logger.log("Logging a string:'%'\n", ss);
-
-  return 0;
+    return 0;
 }
+
