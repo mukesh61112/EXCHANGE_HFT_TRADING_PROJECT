@@ -8,7 +8,8 @@
 
 #define LIKELY(x) __builtin_expect(!!(x), 1)
 #define UNLIKELY(x) __builtin_expect(!!(x), 0)
-
+//auto only with above version on c++ else use
+//inline void ASSERT(bool cond , const std::string &msg)
 
 /// Check condition and exit if not true.
 inline auto ASSERT(bool cond, const std::string &msg) noexcept {
