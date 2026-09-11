@@ -49,9 +49,10 @@ namespace Common {
     LFQueue &operator=(const LFQueue &&) = delete;
 
   private:
-    /// Underlying container of data accessed in FIFO order.
+    /// Underlying container of      data accessed in FIFO order.
     std::vector<T> store_;
-
+    // using CAS check with real atomic apis
+  
     /// Atomic trackers for next index to write new data to and read new data from.
     std::atomic<size_t> next_write_index_ = {0};
     std::atomic<size_t> next_read_index_ = {0};
